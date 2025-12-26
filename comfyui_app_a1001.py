@@ -86,6 +86,7 @@ extra_cmds = [
         f"wget https://github.com/visomaster/visomaster-assets/releases/download/v0.1.0/GPEN-BFR-512.onnx -P {MODELS_DIR}/facerestore_models",
         f"wget https://github.com/Glat0s/GFPGAN-1024-onnx/releases/download/v0.0.1/gfpgan-1024.onnx -P {MODELS_DIR}/facerestore_models",
         f"wget https://github.com/visomaster/visomaster-assets/releases/download/v0.1.0/RestoreFormerPlusPlus.fp16.onnx -P {MODELS_DIR}/facerestore_models",
+]
 
 # Create volume
 vol = modal.Volume.from_name("comfyui-app", create_if_missing=True)
