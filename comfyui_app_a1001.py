@@ -46,7 +46,7 @@ image = (
     .env({"HF_HUB_ENABLE_HF_TRANSFER": "1"})
     # dependencies for WanVideoWrapper node
     .run_commands([
-        "pip install ftfy accelerate einops diffusers sentencepiece"
+        "pip install ftfy accelerate einops diffusers sentencepiece "
     ])
 )
 
@@ -62,7 +62,7 @@ for repo, flags in [
     ("nkchocoai/ComfyUI-SaveImageWithMetaData", {}),
     ("receyuki/comfyui-prompt-reader-node", {'recursive': True, 'install_reqs': True}),
     ("crystian/ComfyUI-Crystools", {'install_reqs': True}),
-    ("chflame163/ComfyUI-PMRF", {})
+    ("chflame163/ComfyUI-PMRF", {'install_reqs': True})
 ]:
     image = image.run_commands([git_clone_cmd(repo, **flags)])
 
