@@ -66,11 +66,6 @@ for repo, flags in [
 ]:
     image = image.run_commands([git_clone_cmd(repo, **flags)])
 
-# pip install
-image = image.run_commands([
-    "pip install NATTEN==0.17.5",
-])
-
 # Model download tasks (will be done at runtime)
 model_tasks = [
     ("unet/FLUX", "flux1-dev-Q8_0.gguf", "city96/FLUX.1-dev-gguf", None),
