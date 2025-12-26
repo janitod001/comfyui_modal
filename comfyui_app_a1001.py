@@ -62,7 +62,7 @@ for repo, flags in [
     ("nkchocoai/ComfyUI-SaveImageWithMetaData", {}),
     ("receyuki/comfyui-prompt-reader-node", {'recursive': True, 'install_reqs': True}),
     ("crystian/ComfyUI-Crystools", {'install_reqs': True}),
-    ("2kpr/ComfyUI-PMRF", {})
+    ("chflame163/ComfyUI-PMRF", {})
 ]:
     image = image.run_commands([git_clone_cmd(repo, **flags)])
 
