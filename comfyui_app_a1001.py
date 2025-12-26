@@ -77,15 +77,15 @@ model_tasks = [
 ]
 
 extra_cmds = [
-        f"wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth -P {MODELS_DIR}/upscale_models",
-        f"wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth -P {MODELS_DIR}/upscale_models",
-        f"wget https://github.com/Phhofm/models/releases/download/4xBHI_dat2_real/4xBHI_dat2_real.pth -P {MODELS_DIR}/upscale_models",
-        f"wget https://github.com/Phhofm/models/releases/download/1xgaterv3_r_sharpen/1xgaterv3_r_sharpen_fp32_op17_onnxslim.onnx -P {MODELS_DIR}/upscale_models",
-        f"wget https://github.com/Phhofm/models/releases/download/2xPublic_realplksr_dysample_layernorm_real_nn/2xPublic_realplksr_dysample_layernorm_real_nn.pth -P {MODELS_DIR}/upscale_models",
-        f"wget https://github.com/visomaster/visomaster-assets/releases/download/v0.1.0/GFPGANv1.4.onnx -P {MODELS_DIR}/facerestore_models",
-        f"wget https://github.com/visomaster/visomaster-assets/releases/download/v0.1.0/GPEN-BFR-512.onnx -P {MODELS_DIR}/facerestore_models",
-        f"wget https://github.com/Glat0s/GFPGAN-1024-onnx/releases/download/v0.0.1/gfpgan-1024.onnx -P {MODELS_DIR}/facerestore_models",
-        f"wget https://github.com/visomaster/visomaster-assets/releases/download/v0.1.0/RestoreFormerPlusPlus.fp16.onnx -P {MODELS_DIR}/facerestore_models",
+    f"wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth -P {MODELS_DIR}/upscale_models",
+    f"wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth -P {MODELS_DIR}/upscale_models",
+    f"wget https://github.com/Phhofm/models/releases/download/4xBHI_dat2_real/4xBHI_dat2_real.pth -P {MODELS_DIR}/upscale_models",
+    f"wget https://github.com/Phhofm/models/releases/download/1xgaterv3_r_sharpen/1xgaterv3_r_sharpen_fp32_op17_onnxslim.onnx -P {MODELS_DIR}/upscale_models",
+    f"wget https://github.com/Phhofm/models/releases/download/2xPublic_realplksr_dysample_layernorm_real_nn/2xPublic_realplksr_dysample_layernorm_real_nn.pth -P {MODELS_DIR}/upscale_models",
+    f"wget https://github.com/visomaster/visomaster-assets/releases/download/v0.1.0/GFPGANv1.4.onnx -P {MODELS_DIR}/facerestore_models",
+    f"wget https://github.com/visomaster/visomaster-assets/releases/download/v0.1.0/GPEN-BFR-512.onnx -P {MODELS_DIR}/facerestore_models",
+    f"wget https://github.com/Glat0s/GFPGAN-1024-onnx/releases/download/v0.0.1/gfpgan-1024.onnx -P {MODELS_DIR}/facerestore_models",
+    f"wget https://github.com/visomaster/visomaster-assets/releases/download/v0.1.0/RestoreFormerPlusPlus.fp16.onnx -P {MODELS_DIR}/facerestore_models",
 ]
 
 # Create volume
